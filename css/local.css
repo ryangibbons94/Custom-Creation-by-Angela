@@ -307,6 +307,7 @@ main {
     background-repeat: no-repeat;
     padding-bottom: 5em;
     padding-top: 5em;
+    position: relative;
   }
   .creations:nth-of-type(1) {
     -webkit-transform: scaleX(-1);
@@ -318,6 +319,7 @@ main {
   .creations h2 {
     text-align: center;
     font-family: 'Fuzzy Bubbles', cursive;
+    z-index: 10;
   }
   .creations .creationPics {
     display: -webkit-box;
@@ -340,6 +342,7 @@ main {
   .creations p {
     text-align: center;
     padding: 0.5em 1em;
+    z-index: 10;
   }
   .creations .button-solid {
     margin: 2em auto;
