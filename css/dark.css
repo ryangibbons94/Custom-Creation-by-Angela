@@ -87,6 +87,18 @@
   body.dark-mode #about .right-section .button-solid {
     background: var(--darkPrimary);
   }
+  body.dark-mode #landingCreation:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    opacity: .75;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
   body.dark-mode #how-we-know {
     -webkit-box-shadow: none;
             box-shadow: none;
