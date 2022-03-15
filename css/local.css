@@ -287,8 +287,8 @@ main {
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  #landingCreation {
-    position: relative;
+  #landingCreation2 {
+    background-image: url(/images/angelabackground2.png);
   }
   .creations {
     display: -webkit-box;
@@ -301,10 +301,19 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-image: url(/images/angelabackground.png);
+    background-image: url(/images/angelabackground1.png);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
+    padding-bottom: 5em;
+    padding-top: 5em;
+  }
+  .creations:nth-of-type(1) {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -webkit-filter: FlipH;
+            filter: FlipH;
+    -ms-filter: "FlipH";
   }
   .creations h2 {
     text-align: center;
@@ -337,5 +346,26 @@ main {
   }
 }
 /* Tablet */
+@media only screen and (min-width: 48em) {
+  .creations .creationPics {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .creations p {
+    width: 80%;
+    max-width: 40em;
+  }
+}
 /* Small Desktop */
+@media only screen and (min-width: 64em) {
+  .creationPics .middleIMG {
+    -webkit-transform: translateY(-2.5em);
+            transform: translateY(-2.5em);
+    margin-top: 2em;
+  }
+}
 /* Large Desktop */
