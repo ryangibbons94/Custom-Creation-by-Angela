@@ -74,10 +74,11 @@
 	  }
 	
 	:root {
-		--primary: #0e817c;
-		--darkPrimary: #13726d;
-		--tint: #0e524e;
-		--shade: #49b5b0;
+		--primary: #FFF2B3;
+		--darkPrimary: #99916b;
+		--tint: #666148;
+		--shade: #333024;
+		--secondary: #7D86B3;
 	}
 	
 	body, html {
@@ -133,7 +134,8 @@
 	}
 
     .button-solid {
-        color: #fff;
+        color: #000;
+		opacity: .8;
         display: block;
         margin: auto;
         text-align: center;
@@ -259,9 +261,9 @@
 	}
 	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
 		width: 30/20em;
-		height: 2/20em;
+		height: 3/20em;
 		background-color: #000;
-		border-radius: 4/20em;
+		border-radius: 3/20em;
 		position: absolute;
 		-webkit-transition-property: -webkit-transform;
 		transition-property: -webkit-transform;
@@ -284,7 +286,6 @@
 	}
 	.hamburger-inner::after {
 		bottom: -10/20em;
-		width: 20/20em;
 	}
 	
 	/* * Spring */
@@ -390,7 +391,6 @@
 		position: relative;
 		z-index: 1000;
 		background: #777;
-		border-bottom: 3/20em solid var(--primary);
 	}
 	
 	.mobile-nav {
@@ -406,7 +406,7 @@
 				justify-content: center;
 		height: 100%;
 		z-index: 100;
-		background: #fff;
+		background: #FFF2B3;
 	}
 	
 	.hamburger {
@@ -423,7 +423,7 @@
 	}
 	
 	.navbar-menu {
-		background: #f5f5f5;
+		background: #FFF2B3;
 		width: 0;
 		position: absolute;
 		right: 0;
@@ -479,8 +479,8 @@
 	}
 	
 	#active-menu {
-		border-right: 4/20em solid var(--primary);
-		color: var(--primary);
+		border-right: 4/20em solid var(--secondary);
+		color: var(--secondary);
 	}
 }
 
@@ -558,6 +558,7 @@
 		    -ms-flex-pack: center;
 		        justify-content: center;
 		height: 100/20em;
+		background: #FFF2B3;
 	}
 
 	.navbar-menu {
@@ -584,8 +585,7 @@
             margin: 0 !important;
             position: absolute;
             left: 0px;
-            height: 120/20em;
-            width: 180/20em;
+            width: 250/20em;
             top: 50%;
 			transform: translateY(-50%);
             padding: 0;
@@ -614,7 +614,7 @@
             top: 0;
             width: 100%;
             height: 148/20em;
-            background: #fff;
+            background: #FFF2B3;
             position: fixed;
             z-index: 1000;
             left: 0;
@@ -669,6 +669,7 @@
                         color: #fff;
                         &:before {
                             width: 100%;
+							background: #7D86B3;
                             opacity: 1;
                             transform: translateY(-50%) scaleX(1);
                         }
@@ -694,7 +695,7 @@
                 -o-transition: .2s ease;
                 transition: .2s ease;
                 content: '';
-                background: var(--primary);
+                background: #7D86B3;
                 height: 40/18em;
                 width: 100%;
                 position: absolute;
@@ -721,7 +722,7 @@
                 -o-transition: .2s ease;
                 transition: .2s ease;
                 content: '';
-                background: var(--primary);
+                background: #7D86B3;
                 height: 40/18em;
                 width: 100%;
                 position: absolute;
@@ -943,7 +944,7 @@
                                 display: block;
                                 height: 2/18em;
                                 width: 0%;
-                                background: var(--primary);
+                                background: #7D86B3;
                                 opacity: 1;
                                 bottom: -3/18em;
                                 left: 0;

@@ -88,7 +88,8 @@
     background: var(--darkPrimary);
   }
   body.dark-mode #how-we-know {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   body.dark-mode #how-we-know .left-section {
     background: var(--medium);
@@ -198,6 +199,15 @@
   }
   body.dark-mode #form label {
     color: #fff;
+  }
+  body.dark-mode #form ::-webkit-input-placeholder {
+    opacity: .3;
+  }
+  body.dark-mode #form :-ms-input-placeholder {
+    opacity: .3;
+  }
+  body.dark-mode #form ::-ms-input-placeholder {
+    opacity: .3;
   }
   body.dark-mode #form ::placeholder {
     opacity: .3;
