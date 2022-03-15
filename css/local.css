@@ -71,48 +71,6 @@ main {
     height: 2.94444444em;
     padding-top: 0.16666667em;
   }
-  #hero .call-now {
-    height: 2.94444444em;
-    width: 9.11111111em;
-    font-size: 0.9em;
-    display: inline-block;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-decoration: none;
-    margin: 0;
-  }
-  #hero .call-now img {
-    display: inline-block;
-    width: 1.16666667em;
-    height: 1.16666667em;
-  }
-  #hero .call-now .dark {
-    display: none;
-  }
-  #hero .call-now span {
-    display: block;
-  }
-  #hero .call-now .text {
-    font-size: 0.6em;
-    line-height: 1.16666667;
-    text-transform: uppercase;
-    margin-bottom: 0.5em;
-  }
-  #hero .call-now .number {
-    font-weight: bold;
-    line-height: 1.16666667;
-    font-size: 1em;
-  }
-  #hero .business-casual {
-    display: none;
-  }
 }
 /* Tablet */
 @media only screen and (min-width: 48em) {
@@ -166,16 +124,33 @@ main {
     position: relative;
   }
   #services .service {
-    background: #0e817c;
+    background: #fff;
     padding: 2.1em;
     width: 90%;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 1.05em;
+  }
+  #services .service .circle {
+    height: 2.75em;
+    width: 2.75em;
+    background: var(--primary);
+    border-radius: 50%;
   }
   #services .service:nth-of-type(2) {
-    border-bottom: 0.05em solid rgba(73, 181, 176, 0.5);
+    border-top: 0.35em solid #fff2b3;
   }
   #services .service:nth-of-type(2) {
-    background: #10625e;
+    background: #fff;
     width: 100%;
     -webkit-box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
             box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
@@ -184,41 +159,22 @@ main {
             order: 1;
     margin-bottom: 0;
   }
-  #services .service:nth-of-type(2) .button-solid {
-    color: #10625e;
-  }
-  #services .service:nth-of-type(2) .button-solid:before {
-    background: var(--primary);
-  }
-  #services .service:nth-of-type(2) .button-solid:hover {
-    color: #fff;
-  }
   #services .service h2 {
-    color: #fff;
-    font-size: 1.2em;
-    line-height: 1.16666667;
-    margin-bottom: 0.625em;
-    text-align: left;
+    color: #000;
+    font-size: 1.4em;
+    line-height: 1;
+    margin-bottom: 0.53571429em;
+    margin-top: 0.53571429em;
+    text-align: center;
     font-weight: 900;
   }
-  #services .service h2 span {
-    display: block;
-    color: #fff;
-  }
   #services .service p {
-    color: #fff;
+    color: #000;
     font-size: 0.9em;
     line-height: 1.5;
-    text-align: left;
+    text-align: center;
     margin-bottom: 1.66666667em;
     opacity: 1;
-  }
-  #services .service .button-solid {
-    background: #fff;
-    color: #10625e;
-  }
-  #services .service .button-solid:hover {
-    color: #fff;
   }
 }
 /* Large Phone */
