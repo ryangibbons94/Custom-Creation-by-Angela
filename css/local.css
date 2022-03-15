@@ -287,6 +287,9 @@ main {
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
+  #landingCreation {
+    position: relative;
+  }
   .creations {
     display: -webkit-box;
     display: -ms-flexbox;
