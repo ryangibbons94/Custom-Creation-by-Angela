@@ -251,19 +251,24 @@ main {
         .service {
             margin: 0;
             width: 372/20em;
-            height: auto;
-            border-radius: 5/20em 5/20em 0 0;
+            height: 100%;
+            border-radius: 0;
+            border-top: 7/20em solid #FFF2B3;
 
             &:nth-of-type(2) {
                 order: initial;
                 width: 400/20em;
-                height: 345/20em;
+                height: 100%;
                 border: none;
+                box-shadow: none;
+                border-top: 7/20em solid #FFF2B3;
+                margin-top: 0;
+                margin-bottom: auto;
             }
 
-            &:last-of-type {
-                border-radius: 5/20em 5/20em 0 0;
-            }
+            // &:last-of-type {
+            //     border-radius: 5/20em 5/20em 0 0;
+            // }
         }
     }
 }

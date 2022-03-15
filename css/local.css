@@ -248,19 +248,22 @@ main {
   #services .service {
     margin: 0;
     width: 18.6em;
-    height: auto;
-    border-radius: 0.25em 0.25em 0 0;
+    height: 100%;
+    border-radius: 0;
+    border-top: 0.35em solid #fff2b3;
   }
   #services .service:nth-of-type(2) {
     -webkit-box-ordinal-group: initial;
         -ms-flex-order: initial;
             order: initial;
     width: 20em;
-    height: 17.25em;
+    height: 100%;
     border: none;
-  }
-  #services .service:last-of-type {
-    border-radius: 0.25em 0.25em 0 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-top: 0.35em solid #fff2b3;
+    margin-top: 0;
+    margin-bottom: auto;
   }
 }
 /* Small Desktop */
