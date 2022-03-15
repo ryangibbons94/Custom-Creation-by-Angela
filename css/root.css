@@ -370,7 +370,6 @@
   }
   /* Navigation Links */
   .mobile-wrapper img {
-    height: 3.9em;
     margin-top: 0.25em;
   }
   .navbar-menu {
@@ -508,7 +507,7 @@
     margin: 0 !important;
     position: absolute;
     left: 0px;
-    width: 12.5em;
+    width: 12em;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
