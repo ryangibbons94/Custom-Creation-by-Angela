@@ -67,7 +67,7 @@
     --darkPrimary: #99916b;
     --tint: #666148;
     --shade: #333024;
-    --secondary: #7D86B3;
+    --secondary: #322d29;
   }
   body,
   html {
@@ -586,7 +586,7 @@
   }
   .side-nav ul li:hover a.link:before {
     width: 100%;
-    background: #7D86B3;
+    background: var(--secondary);
     opacity: 1;
     -webkit-transform: translateY(-50%) scaleX(1);
             transform: translateY(-50%) scaleX(1);
@@ -606,7 +606,7 @@
     -webkit-transition: .2s ease;
     transition: .2s ease;
     content: '';
-    background: #7D86B3;
+    background: var(--secondary);
     height: 2.22222222em;
     width: 100%;
     position: absolute;
@@ -634,7 +634,7 @@
     -webkit-transition: .2s ease;
     transition: .2s ease;
     content: '';
-    background: #7D86B3;
+    background: var(--secondary);
     height: 2.22222222em;
     width: 100%;
     position: absolute;
@@ -680,7 +680,7 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #footer {
-    background: #7D86B3;
+    background: var(--secondary);
     padding: 3.1em 0 3.8em;
     font-size: min(4vw, 1.2em);
   }
