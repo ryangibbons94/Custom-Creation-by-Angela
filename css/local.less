@@ -128,6 +128,12 @@ main {
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
+    .serviceBackground{
+        background: url('/images/angelabackgroundabout.png');
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
 
     #services {
         padding-top: 0;
@@ -136,6 +142,7 @@ main {
         flex-direction: column-reverse;
         z-index: 100;
         position: relative;
+
         .service {
             background: #fff;
             padding: 42/20em;
@@ -251,6 +258,7 @@ main {
         position: relative;
         z-index: 100;
         padding: 0;
+        
 
         .service {
             margin: 0;
@@ -261,7 +269,7 @@ main {
 
             &:nth-of-type(2) {
                 order: initial;
-                width: 400/20em;
+                width: 372/20em;
                 height: 100%;
                 border: none;
                 box-shadow: none;
@@ -300,17 +308,89 @@ main {
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(/images/angelabackgroundabout.png);
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        padding: 100/20em 40/20em;
 
+        .aboutContent{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40/20em;
+        }
+
+        .aboutText{
+            p{
+                text-align: center;
+            }
+            img{
+                display: none;
+            }
+        }
+
+        .picOfMe{
+            border-radius: 50%;
+            width: 80%;
+            aspect-ratio: 1;
+            order: -1;
+            max-width: 450/20em;
+        }
+    }
+}
+/*fix 500px paragraph padding*/
+@media only screen and (min-width: 500px) {
+    .about{
+        p{
+            padding: 0 20/20em;
+        }
+    }
 }
 
 /* Tablet */
 @media only screen and (min-width: 48em) {
+    .about{
 
+        padding: 100/20em 40/20em;
+        .aboutContent{
+            flex-direction: row;
+
+            img{
+                order: 2;
+
+            }
+        }
+    }
 }
 
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
-
+    .about{
+        .aboutContent{
+            position: relative;
+            gap: 160/20em;
+        p{
+            max-width: 400/20em;
+            padding: 40/20em;
+            text-align: left;
+            z-index: 100;
+            
+        }
+        .border{
+            display: block;
+            position: absolute;
+            top: -40/20em;
+            left: -100/20em;
+            width: 650/20em;
+            opacity: .65;
+        }
+    }
+}
 }
 
 /* Large Desktop */
@@ -326,6 +406,12 @@ main {
 @media only screen and (min-width: 0em) {
     #landingCreation1, #landingCreation3{
         background-image: url(/images/angelabackground2.png);
+    }
+
+    .title{
+        text-align: center;
+        font-family: 'Fuzzy Bubbles', cursive;
+        z-index: 10;
     }
 
     .creations{
@@ -430,7 +516,19 @@ main {
             display: inline-block;
         }
         .card{
-            border: 1px solid red;
+            margin: 30/20em 0;
+            padding: 20/20em;
+            background: rgba(255, 255, 255, .6);
+            border-radius: 5/20em;
+
+            .cardTop{
+                display: flex;
+                justify-content: flex-start;
+                gap: 40/20em;
+
+            }
+
+            
         }
     }
 }
@@ -438,6 +536,22 @@ main {
 /* Tablet */
 @media only screen and (min-width: 48em) {
 
+    .testimonials{
+        .card{
+            h4{
+                font-size: 35/20em;
+            }
+            p{
+                font-size: 25/20em;
+            }
+            padding-bottom: 50/20em;
+            width: 80%;
+            max-width: 950/20em;
+        }
+        img{
+            height: 36px;
+        }
+    }
 }
 
 /* Small Desktop */

@@ -557,14 +557,14 @@
 		-webkit-box-pack: center;
 		    -ms-flex-pack: center;
 		        justify-content: center;
-		height: 100/20em;
+		height: 80/20em;
 		background: #FFF2B3;
 	}
 
 	.navbar-menu {
 		width: 96%;
 		min-height: 100/20em;
-		height: 153/20em;
+		height: 100/20em;
 		margin: auto;
 		position: fixed;
 		display: -webkit-box;
@@ -575,11 +575,11 @@
 		        align-items: center;
 		z-index: 10000;
 		left: 0;
-		background: transparent;
+		background: var(--primary);
 		overflow: visible;
 		-webkit-box-sizing: border-box;
 		        box-sizing: border-box;
-		max-width: 1144/20em;
+		max-width: 1046/20em;
 
         .nav-logo {
             margin: 0 !important;
@@ -605,6 +605,10 @@
         }
 	}
 
+	h2.title{
+		font-size: 50/20em;
+	}
+
 	body {
 		position: relative;
         font-size: 20px;
@@ -613,7 +617,7 @@
             content: '';
             top: 0;
             width: 100%;
-            height: 148/20em;
+            height: 105/20em;
             background: #FFF2B3;
             position: fixed;
             z-index: 1000;
@@ -870,6 +874,10 @@
                 height: 53/18em;
                 padding-top: 3/18em;
                 width: 250/18em;
+				&:before {
+					background: var(--darkPrimary);
+
+				}
             }
         }
     }
