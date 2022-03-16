@@ -23,15 +23,15 @@ main {
     display: block;
     height: 100%;
     width: 100%;
-    background: #ECEFFE;
-    opacity: .45;
+    background: #e4e3e3;
+    opacity: .65;
     top: 0;
     left: 0;
     z-index: -10;
   }
   #hero .hero-content {
     width: 96%;
-    max-width: 57.2em;
+    max-width: 45em;
     margin: auto;
     position: relative;
     z-index: 10;
@@ -287,7 +287,8 @@ main {
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  #landingCreation2 {
+  #landingCreation1,
+  #landingCreation3 {
     background-image: url(/images/angelabackground2.png);
   }
   .creations {
@@ -371,4 +372,41 @@ main {
     margin-top: 2em;
   }
 }
+/* Large Desktop */
+/*-- -------------------------- -->
+<---       testimonials         -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  .testimonials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: url(/images/angelabackground1.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 5em;
+    padding-top: 5em;
+    position: relative;
+  }
+  .testimonials .name {
+    display: inline-block;
+  }
+  .testimonials .card {
+    border: 1px solid red;
+  }
+}
+/* Tablet */
+/* Small Desktop */
 /* Large Desktop */

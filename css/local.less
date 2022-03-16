@@ -27,8 +27,8 @@ main {
             display: block;
             height: 100%;
             width: 100%;
-            background: #ECEFFE;
-            opacity: .45;
+            background: #e4e3e3;
+            opacity: .65;
             top: 0;
             left: 0;
             z-index: -10;
@@ -36,7 +36,7 @@ main {
 
         .hero-content {
             width: 96%;
-            max-width: 1144/20em;
+            max-width: 900/20em;
             margin: auto;
             position: relative;
             z-index: 10;
@@ -324,7 +324,7 @@ main {
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
-    #landingCreation2{
+    #landingCreation1, #landingCreation3{
         background-image: url(/images/angelabackground2.png);
     }
 
@@ -399,6 +399,49 @@ main {
             margin-top: 40/20em;
         }
     }
+
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+
+}
+
+/*-- -------------------------- -->
+<---       testimonials         -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+    .testimonials{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(/images/angelabackground1.png);
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        padding-bottom: 100/20em;
+        padding-top: 100/20em;
+        position: relative;
+
+        .name{
+            display: inline-block;
+        }
+        .card{
+            border: 1px solid red;
+        }
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
 
 }
 

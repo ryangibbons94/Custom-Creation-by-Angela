@@ -14,6 +14,13 @@
         <---        Testimonials        -->
         <--- -------------------------- -*/
   }
+  body.dark-mode .nav-logo {
+    display: none;
+  }
+  body.dark-mode #active-menu {
+    border-right: 0.2em solid var(--primary);
+    color: var(--primary);
+  }
   body.dark-mode #hero {
     position: relative;
   }
@@ -233,7 +240,23 @@
 }
 /* Desktop */
 @media screen and (min-width: 1024px) {
+  body.dark-mode .nav-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   body.dark-mode #how-we-know {
+    background: var(--darkPrimary);
+  }
+  body.dark-mode #active-menu,
+  body.dark-mode nav ul li:hover {
+    border: none;
+    color: #fff;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-weight: bold;
+  }
+  body.dark-mode .navbar-links:hover a.link:before {
     background: var(--darkPrimary);
   }
 }

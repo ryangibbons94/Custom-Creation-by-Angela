@@ -5,6 +5,15 @@
 
     body.dark-mode {
 
+        .nav-logo{
+            display: none;
+        }
+
+        #active-menu {
+            border-right: 4/20em solid var(--primary);
+            color: var(--primary);
+        }
+
         /*-- -------------------------- -->
         <---           Home             -->
         <--- -------------------------- -*/
@@ -332,9 +341,28 @@
 @media screen and (min-width: 1024px) {
     body.dark-mode {
         
-        
+        .nav-logo{
+            display: flex;
+        }
         #how-we-know {
             background: var(--darkPrimary);
         }
+
+    #active-menu,nav ul li:hover {
+
+            border: none;
+            color: #fff;
+            padding-top: 0;
+            padding-bottom: 0;
+            font-weight: bold;
     }
+    .navbar-links {
+        &:hover{
+        a.link {
+    
+        &:before {
+            background: var(--darkPrimary);
+        }}
+    }}
+}
 }
