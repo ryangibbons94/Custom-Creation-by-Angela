@@ -783,6 +783,22 @@
   #footer .right-section .button-solid:before {
     background: var(--darkPrimary);
   }
+  .socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1em;
+  }
+  .socials a i {
+    color: #fff;
+    font-size: 2em;
+  }
+  .socials a i:hover {
+    color: var(--darkPrimary);
+  }
 }
 /* Tablet */
 /* Small Desktop */
@@ -812,10 +828,24 @@
   #footer .left-section {
     width: 20.45em;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 6em;
+  }
+  #footer .left-section .socials {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   #footer .left-section .logo {
     text-align: left;
     margin-left: 0;
+    margin-top: 0;
   }
   #footer .left-section p {
     text-align: left;

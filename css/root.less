@@ -882,6 +882,22 @@
         }
     }
 
+	.socials{
+		display: flex;
+		justify-content: center;
+		gap: 20/20em;
+		a{
+			i{
+				color: #fff;
+				font-size: 40/20em;
+
+				&:hover{
+					color: var(--darkPrimary);
+				}
+			}
+		}
+	}
+
 }
 
 /* Tablet */
@@ -910,10 +926,19 @@
         .left-section {
             width: 409/20em;
             margin: 0;
+			display: flex;
+			flex-direction: column;
+			gap: 120/20em;
+
+			.socials{
+				justify-content: flex-start;
+			}
+
 
             .logo {
                 text-align: left;
 				margin-left: 0;
+				margin-top: 0;
             }
 
             p {
