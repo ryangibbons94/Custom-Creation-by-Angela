@@ -21,10 +21,18 @@
     border-right: 0.2em solid var(--primary);
     color: var(--primary);
   }
-  body.dark-mode #hero {
+  body.dark-mode #hero,
+  body.dark-mode #about,
+  body.dark-mode .creations,
+  body.dark-mode #testimonials,
+  body.dark-mode .serviceBackground {
     position: relative;
   }
-  body.dark-mode #hero:before {
+  body.dark-mode #hero:before,
+  body.dark-mode #about:before,
+  body.dark-mode .creations:before,
+  body.dark-mode #testimonials:before,
+  body.dark-mode .serviceBackground:before {
     content: '';
     position: absolute;
     display: block;
@@ -35,25 +43,53 @@
     top: 0;
     left: 0;
   }
-  body.dark-mode #hero h1 {
+  body.dark-mode #hero h1,
+  body.dark-mode #about h1,
+  body.dark-mode .creations h1,
+  body.dark-mode #testimonials h1,
+  body.dark-mode .serviceBackground h1 {
     color: #fff;
   }
-  body.dark-mode #hero .call-now .light {
+  body.dark-mode #hero .call-now .light,
+  body.dark-mode #about .call-now .light,
+  body.dark-mode .creations .call-now .light,
+  body.dark-mode #testimonials .call-now .light,
+  body.dark-mode .serviceBackground .call-now .light {
     display: none;
   }
-  body.dark-mode #hero .call-now .dark {
+  body.dark-mode #hero .call-now .dark,
+  body.dark-mode #about .call-now .dark,
+  body.dark-mode .creations .call-now .dark,
+  body.dark-mode #testimonials .call-now .dark,
+  body.dark-mode .serviceBackground .call-now .dark {
     display: inline-block;
   }
-  body.dark-mode #hero .call-now .text {
+  body.dark-mode #hero .call-now .text,
+  body.dark-mode #about .call-now .text,
+  body.dark-mode .creations .call-now .text,
+  body.dark-mode #testimonials .call-now .text,
+  body.dark-mode .serviceBackground .call-now .text {
     color: #fff;
   }
-  body.dark-mode #hero .call-now .number {
+  body.dark-mode #hero .call-now .number,
+  body.dark-mode #about .call-now .number,
+  body.dark-mode .creations .call-now .number,
+  body.dark-mode #testimonials .call-now .number,
+  body.dark-mode .serviceBackground .call-now .number {
     color: #fff;
   }
-  body.dark-mode #hero .button-solid {
+  body.dark-mode #hero .button-solid,
+  body.dark-mode #about .button-solid,
+  body.dark-mode .creations .button-solid,
+  body.dark-mode #testimonials .button-solid,
+  body.dark-mode .serviceBackground .button-solid {
     background: var(--darkPrimary);
   }
-  body.dark-mode #hero .button-solid:before {
+  body.dark-mode #hero .button-solid:before,
+  body.dark-mode #about .button-solid:before,
+  body.dark-mode .creations .button-solid:before,
+  body.dark-mode #testimonials .button-solid:before,
+  body.dark-mode .serviceBackground .button-solid:before {
     background: var(--tint);
   }
   body.dark-mode #services .service {
@@ -68,43 +104,31 @@
   body.dark-mode #services .service:nth-of-type(2) .button-solid:before {
     background: var(--primary);
   }
-  body.dark-mode #about:before {
+  body.dark-mode #about1:before {
     background: #0a0a0a;
   }
-  body.dark-mode #about .left-section:before {
+  body.dark-mode #about1 .left-section:before {
     background: var(--shade);
     opacity: .1;
   }
-  body.dark-mode #about .right-section .topper {
+  body.dark-mode #about1 .right-section .topper {
     color: var(--shade);
   }
-  body.dark-mode #about .right-section h2 {
+  body.dark-mode #about1 .right-section h2 {
     color: #fff;
   }
-  body.dark-mode #about .right-section h2:before {
+  body.dark-mode #about1 .right-section h2:before {
     background: var(--shade);
     opacity: .1;
   }
-  body.dark-mode #about .right-section h2 span {
+  body.dark-mode #about1 .right-section h2 span {
     color: var(--shade);
   }
-  body.dark-mode #about .right-section .decoration .line {
+  body.dark-mode #about1 .right-section .decoration .line {
     background: var(--shade);
   }
-  body.dark-mode #about .right-section .button-solid {
+  body.dark-mode #about1 .right-section .button-solid {
     background: var(--darkPrimary);
-  }
-  body.dark-mode .creations:before {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    background: #000000;
-    opacity: .65;
-    top: 0;
-    left: 0;
-    z-index: 0;
   }
   body.dark-mode #how-we-know {
     -webkit-box-shadow: none;
@@ -234,8 +258,12 @@
   body.dark-mode #form .contact-right {
     background: var(--tint);
   }
-  body.dark-mode #reviews .name {
-    color: #fff;
+  body.dark-mode #testimonials .card {
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  body.dark-mode #testimonials .card h4.name {
+    color: #ffffff;
   }
 }
 /* Desktop */

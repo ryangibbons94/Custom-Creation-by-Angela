@@ -18,7 +18,7 @@
         <---           Home             -->
         <--- -------------------------- -*/
     
-        #hero {
+        #hero, #about, .creations, #testimonials, .serviceBackground{
             position: relative;
     
             &:before {
@@ -85,7 +85,7 @@
             }
         }
     
-        #about {
+        #about1 {
             &:before {
                 background: #0a0a0a;
             }
@@ -124,20 +124,20 @@
             }
         }
 
-        .creations{
-            &:before {
-                content: '';
-                position: absolute;
-                display: block;
-                height: 100%;
-                width: 100%;
-                background: #000000;
-                opacity: .65;
-                top: 0;
-                left: 0;
-                z-index: 0;
-            }
-        }
+        // .creations{
+        //     &:before {
+        //         content: '';
+        //         position: absolute;
+        //         display: block;
+        //         height: 100%;
+        //         width: 100%;
+        //         background: #000000;
+        //         opacity: .65;
+        //         top: 0;
+        //         left: 0;
+        //         z-index: 0;
+        //     }
+        // }
     
         #how-we-know {
             box-shadow: none;
@@ -329,10 +329,17 @@
         <---        Testimonials        -->
         <--- -------------------------- -*/
 
-        #reviews {
-            .name {
-                color: #fff;
+        #testimonials {
+            .card {
+                background: rgba(0,0,0, .3);
+                z-index: 1;
+
+                h4.name{
+                    color: #fff
+                }
             }
+            
+            
         }
     }
 }
