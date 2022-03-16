@@ -330,6 +330,7 @@ main {
         -ms-flex-order: -1;
             order: -1;
     max-width: 22.5em;
+    z-index: 1;
   }
 }
 /*fix 500px paragraph padding*/
