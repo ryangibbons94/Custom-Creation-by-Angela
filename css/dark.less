@@ -5,6 +5,10 @@
 
     body.dark-mode {
 
+        .button-solid{
+            color: #fff;
+        }
+
         .nav-logo{
             display: none;
         }
@@ -68,6 +72,8 @@
                 background: var(--darkPrimary);
     
                 .button-solid {
+                    background: var(--primary);
+                    color: #000;
                     &:before {
                         background: var(--tint);
                     }
@@ -77,6 +83,11 @@
                     background: var(--tint);
     
                     .button-solid {
+                        background: var(--darkPrimary);
+
+                        &:hover{
+                            color: #000;
+                        }
                         &:before {
                             background:var(--primary);
                         }

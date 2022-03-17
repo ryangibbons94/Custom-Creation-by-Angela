@@ -14,6 +14,9 @@
         <---        Testimonials        -->
         <--- -------------------------- -*/
   }
+  body.dark-mode .button-solid {
+    color: #fff;
+  }
   body.dark-mode .nav-logo {
     display: none;
   }
@@ -95,11 +98,21 @@
   body.dark-mode #services .service {
     background: var(--darkPrimary);
   }
+  body.dark-mode #services .service .button-solid {
+    background: var(--primary);
+    color: #000;
+  }
   body.dark-mode #services .service .button-solid:before {
     background: var(--tint);
   }
   body.dark-mode #services .service:nth-of-type(2) {
     background: var(--tint);
+  }
+  body.dark-mode #services .service:nth-of-type(2) .button-solid {
+    background: var(--darkPrimary);
+  }
+  body.dark-mode #services .service:nth-of-type(2) .button-solid:hover {
+    color: #000;
   }
   body.dark-mode #services .service:nth-of-type(2) .button-solid:before {
     background: var(--primary);
