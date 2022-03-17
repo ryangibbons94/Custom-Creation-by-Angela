@@ -316,7 +316,7 @@
     
         #form {
             .topper {
-                color: var(--shade);
+                color: var(--primary);
             }
     
             h2 {
@@ -333,6 +333,28 @@
     
             .contact-right {
                 background: var(--tint);
+            }
+            #contact{
+                .input-group{
+                    &:hover {
+                        .hover-box {
+                            border: 1/20em solid var(--primary);
+                        }}
+                        input[type="text"], 
+                        input[type="email"], 
+                        input[type="tel"], 
+                        input[type="url"], 
+                        textarea {
+                           color: #fff;
+                        }
+                }
+                .button-solid{
+                    color: #000;
+
+                    &::before{
+                        background: var(--tint);
+                    }
+                }
             }
         }
 

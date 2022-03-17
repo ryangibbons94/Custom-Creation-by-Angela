@@ -27,6 +27,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="/css/root.css">
     <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="/css/dark.css">
@@ -68,11 +69,11 @@
                         <img class="dark" aria-hidden="true" decoding="async" src="images/angelaLogoWhite.png" alt="compnay logo" height="100">
                     </a>
                     <ul id="on-top" class="navbar-links">
-                        <li class="nav-li"><a id="active-menu" href="index.html">Home</a></li>
+                        <li class="nav-li"><a href="index.html">Home</a></li>
                         <li class="nav-li"><a class="link" href="about.html">About</a></li>
                         <li class="nav-li"><a class="link" href="index.html#services">Creations</a></li>
                         <li class="nav-li"><a class="link" href="/testimonials.html">Testimonials</a></li>
-                        <li class="nav-li"><a class="link" href="/contact.html">Order</a></li>
+                        <li class="nav-li"><a id="active-menu" class="link" href="/contact.html">Order</a></li>
                     </ul>
                 </div>
                 <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
@@ -90,7 +91,7 @@
         <!-- ============================================ -->
     
         <section id="int-hero">
-            <h1 id="home-h">Contact Business</h2>
+            <h1 id="home-h">Order Now</h1>
         </section>
 
         <!-- ============================================ -->
@@ -99,9 +100,9 @@
 
         <section id="form">
             <div class="left-section">
-                <span class="topper">Business Name</span>
-                <h2>Send a Message</h2>
-                <p>If you have any questions or concerns please feel free to reach out to us.  we respond to every call and email.</p>
+                <span class="topper">Custom Creations By Angela Dawn</span>
+                <h2>Order Form</h2>
+                <p>If you would like to place an order please fill out this form and I will be in contact with you.</p>
                 <form id="contact" name="Contact Form" method="post" data-netlify-recaptcha="true" data-netlify="true">
                         <div class="input-group">
                             <label for="name">Full Name</label>
@@ -121,18 +122,13 @@
                             <div aria-hidden="true" class="hover-box"></div>
                         </div>
                         <div class="input-group">
-                            <label for="location">Location</label>
-                            <input id="location" aria-label="location" class="input1 right" name="location" placeholder="Your Location" type="text" tabindex="4" required>
-                            <div aria-hidden="true" class="hover-box"></div>
-                        </div>
-                        <div class="input-group">
-                            <label for="how">How did you hear about us</label>
-                            <input id="how" aria-label="how did you hear about us" name="hear" placeholder="How Did You Hear About Us" type="text" tabindex="5" required>
+                            <label for="how">What would you like to order?(cup, wreath, pens)</label>
+                            <input id="how" aria-label="what would you like to order" name="order" placeholder="What would you like to order?" type="text" tabindex="5" required>
                             <div aria-hidden="true" class="hover-box"></div>
                         </div>
                         <div class="input-group textarea">
-                            <label for="message">Message</label>
-                            <textarea id="message" aria-label="write your message" name="message" placeholder="Tell us about what you need help with" tabindex="6" required></textarea>
+                            <label for="message">Order Details (Please be as specific as possible, if I have an questions I will reach out to you before I begin making your order.)</label>
+                            <textarea id="message" aria-label="Order Details" name="details" placeholder="Order Details" tabindex="6" required></textarea>
                             <div aria-hidden="true" class="hover-box"></div>
                         </div>
                     <p class="form-submit">
@@ -142,20 +138,16 @@
             </div>
             <div class="contact-right">
                 <div class="info-group">
-                    <span class="heading">Location</span>
-                    <span class="info">Somewhere, TX</span>
+                    <span class="heading">Custom Orders</span>
+                    <span class="info">All of my creations are made to order.</span>
                 </div>
                 <div class="info-group">
-                    <span class="heading">Phone</span>
-                    <a class="info" href="tel:555-213-9120">(555) 213-9120</a>
+                    <span class="heading">Order Form</span>
+                    <span class="info">Please fill out the form to place an order.</span>
                 </div>
                 <div class="info-group">
-                    <span class="heading">Email</span>
-                    <a class="info" href="mailto:info@email.com">info@email.com</a>
-                </div>
-                <div class="info-group">
-                    <span class="heading">Hours</span>
-                    <span class="info last">Mon to Sat: 9am to 7pm</span>
+                    <span class="heading">Contact</span>
+                    <span class="info last">Please feel free to reach out if you have any questions and I would be happy to answer them.</span>
                 </div>
             </div>
         </section>
@@ -169,40 +161,41 @@
     <footer id="footer">
         <div class="container">
             <div class="left-section">
-                <a class="logo" href=""><img loading="lazy" decoding="async" src="/images/logo-white.svg" alt="logo" width="293" height="91"></a>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, aut. Molestias delectus rem nihil distinctio nemo assumenda laudantium. Veritatis, natus.
-                </p>
+                <a class="logo" href="/index.html"><img loading="lazy" decoding="async" src="/images/angelaLogoWhite.png" alt="logo" width="300"></a>
+                <div class="socials">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
             </div>
             <div class="right-section">
                 <div class="lists">
                     <ul>
-                        <li><h2>Company</h2></li>
-                        <li><a href="/index.html">Home</a></li>
-                        <li><a href="/about.html">About Us</a></li>
-                        <li><a href="/contact.html">Services</a></li>
-                    </ul>
-                    <ul>
-                        <li><h2>Support</h2></li>
-                        <li><a href="/contact.html">Contact Us</a></li>
+                        <li><h2><a href="/index.html">Home</a></h2></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/about.html">Creations</a></li>
+                        
                     </ul>
                     <ul>
                         <li><h2>Get in Touch</h2></li>
-                        <li><img loading="lazy" decoding="async" src="/images/pin.svg" alt="" width="24" height="24"><a href="" target="_blank">Somewhere, Tx</a></li>
-                        <li><img loading="lazy" decoding="async" src="/images/footer-phone.svg" alt="" width="24" height="24"><a href="tel:555-213-9120">(555) 213-9120</a></li>
                         <li><img loading="lazy" decoding="async" src="/images/email.svg" alt="" width="24" height="24"><a href="mailto:info@email.com">info@email.com</a></li>
                     </ul>
                 </div>
     
                 <div class="buttons">
                     <a class="button-solid" href="/contact.html" >
-                        Call to action button
+                        Order Now
                     </a>
                 </div>
             </div>
         </div>
     </footer>
-
     <script>
         var ba = ["MSIE","Trident","Edge"];
         var b, ua = navigator.userAgent;

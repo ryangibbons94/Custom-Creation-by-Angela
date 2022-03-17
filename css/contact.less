@@ -43,7 +43,7 @@
                 display: block;
                 height: 200%;
                 max-height: 190/64em;
-                width: 40%;
+                width: 50%;
                 background: transparent;
                 border: 10/64em solid var(--primary);
                 opacity: .5;
@@ -75,7 +75,7 @@
     #int-hero {
         min-height: 300/20em;
         height: 300/20em;
-        margin-top: 148/20em;
+        margin-top: 80/20em;
         background-attachment: fixed;
         background-position: center 80%;
         font-size: inherit;
@@ -98,7 +98,7 @@
         .topper {
             font-size: 14/20em;
             line-height: 19/14;
-            color: var(--primary);
+            color: var(--secondary);
             letter-spacing: .06em;
             margin-bottom: 6/14em;
             display: block;
@@ -166,7 +166,7 @@
         }
 
         .contact-right {
-            background: #10625e;
+            background: var(--primary);
             padding: 45/20em 34/20em;
             width: 100%;
             max-width: 300/20em;
@@ -174,12 +174,12 @@
             border-radius: 5/20em;
 
             .heading {
-                color: #fff;
+                color: #000;
                 font-size: 24/20em;
                 line-height: 1.2em;
                 font-weight: bold;
                 padding-left: 20/24em;
-                border-left: 5/24em solid var(--primary);
+                border-left: 5/24em solid var(--secondary);
                 display: block;
                 margin-bottom: 20/24em;
             }
@@ -195,7 +195,7 @@
             .info {
                 font-size: 16/20em;
                 line-height: 28/16;
-                color: #fff;
+                color: #000;
                 opacity: .9;
                 text-decoration: none;
                 display: block;
@@ -250,11 +250,18 @@
                 &:last-of-type {
                     width: 100%;
                 }
+                input[type="text"], 
+                input[type="email"], 
+                input[type="tel"], 
+                input[type="url"], 
+                textarea {
+                    padding-left: 20/20em;
+                }
 
                 &:hover {
                     .hover-box {
                         height: 46/20em;
-                        border: 1/20em solid var(--primary);
+                        border: 1/20em solid var(--secondary);
                         pointer-events: none;
                     }
 
