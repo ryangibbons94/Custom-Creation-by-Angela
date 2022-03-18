@@ -375,6 +375,9 @@ main {
         .aboutContent{
             position: relative;
             gap: 160/20em;
+            .aboutText p{
+                z-index: 1000;
+            }
         p{
             max-width: 400/20em;
             padding: 40/20em;
@@ -389,6 +392,7 @@ main {
             left: -100/20em;
             width: 650/20em;
             opacity: .65;
+            z-index: 0;
         }
     }
 }
@@ -405,6 +409,9 @@ main {
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
+
+    
+
     #landingCreation1, #landingCreation3{
         background-image: url(/images/angelabackground2.png);
     }
@@ -462,6 +469,70 @@ main {
             margin: 40/20em auto;
         }
     }
+
+    // I def want to add this to mobile but need to adjust it. (the move is to make the height and width 100% but I have to play with the sizes to make them look good.
+    .creationPics{
+    //     .left{
+    //     position: relative;
+    //     &:before {
+    //         content: '';
+    //         position: absolute;
+    //         display: block;
+    //         height: 300/20em;
+    //         width: 300/20em;
+    //         background: transparent;
+    //         border: 3/20em solid var(--darkPrimary);
+    //         opacity: .5;
+    //         top: -13/20em;
+    //         left: -13/20em;
+    //         z-index: -1;
+    //     }
+    // }
+
+        .middle, .left, .right{
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 106%;
+                background: transparent;
+                border: 3/20em solid var(--secondary);
+                top: -24/20em;
+                left: -13/20em;
+                opacity: .5;
+                z-index: -1;
+                animation-name: bounce-1;
+                animation-timing-function: linear;
+                animation-duration: 8s;
+                animation-iteration-count: infinite;
+            }
+        }
+        // .right{
+        //     position: relative;
+        //     &:before {
+        //         content: '';
+        //         position: absolute;
+        //         display: block;
+        //         height: 300/20em;
+        //         width: 300/20em;
+        //         background: transparent;
+        //         border: 3/20em solid var(--darkPrimary);
+        //         opacity: .5;
+        //         bottom: -7/20em;
+        //         right: -13/20em;
+        //         z-index: -1;
+        //     }
+        // }}
+
+        @keyframes  bounce-1 {
+            0%   { transform: translateY(0); }
+            50%  { transform: translateY(-8px); }
+            100% { transform: translateY(0); }
+        }
+    }
+
 }
 
 /* Tablet */
@@ -486,12 +557,82 @@ main {
             margin-top: 40/20em;
         }
     }
+    .creationPics{
+        .left{
+        position: relative;
+        
+        &:before {
+            content: '';
+            box-sizing: border-box;
+            position: absolute;
+            display: block;
+            height: 100%;
+            width: 100%;
+            background: transparent;
+            border: 3/20em solid var(--secondary);
+            opacity: .5;
+            top: -13/20em;
+            left: -13/20em;
+            z-index: -1;
+            animation-name: bounce-1;
+            animation-timing-function: linear;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+    }
+
+        .middle{
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                height: 300/20em;
+                width: 320/20em;
+                background: transparent;
+                border: 3/20em solid var(--secondary);
+                top: -24/20em;
+                left: -13/20em;
+                opacity: .5;
+                z-index: -1;
+                animation-name: bounce-1;
+                animation-timing-function: linear;
+                animation-duration: 8s;
+                animation-iteration-count: infinite;
+            }
+        }
+        .right{
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                height: 300/20em;
+                width: 300/20em;
+                background: transparent;
+                border: 3/20em solid var(--secondary);
+                opacity: .5;
+                bottom: -7/20em;
+                right: -13/20em;
+                z-index: -1;
+                animation-name: bounce-1;
+                animation-timing-function: linear;
+                animation-duration: 8s;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+
+    @keyframes  bounce-1 {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-5px); }
+        100% { transform: translateY(0); }
+    }
 
 }
 
-/* Large Desktop */
+// Large Desktop
 @media only screen and (min-width: 1300px) {
-
 }
 
 /*-- -------------------------- -->
@@ -521,6 +662,7 @@ main {
             padding: 20/20em;
             background: rgba(255, 255, 255, .6);
             border-radius: 5/20em;
+        }
 
             .cardTop{
                 display: flex;
@@ -532,7 +674,7 @@ main {
             
         }
     }
-}
+
 
 /* Tablet */
 @media only screen and (min-width: 48em) {

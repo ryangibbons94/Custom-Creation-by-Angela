@@ -362,6 +362,9 @@ main {
     position: relative;
     gap: 8em;
   }
+  .about .aboutContent .aboutText p {
+    z-index: 1000;
+  }
   .about .aboutContent p {
     max-width: 20em;
     padding: 2em;
@@ -375,6 +378,7 @@ main {
     left: -5em;
     width: 32.5em;
     opacity: .65;
+    z-index: 0;
   }
 }
 /* Large Desktop */
@@ -449,6 +453,62 @@ main {
   .creations .button-solid {
     margin: 2em auto;
   }
+  .creationPics .middle,
+  .creationPics .left,
+  .creationPics .right {
+    position: relative;
+  }
+  .creationPics .middle:before,
+  .creationPics .left:before,
+  .creationPics .right:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 106%;
+    background: transparent;
+    border: 0.15em solid var(--secondary);
+    top: -1.2em;
+    left: -0.65em;
+    opacity: .5;
+    z-index: -1;
+    -webkit-animation-name: bounce-1;
+            animation-name: bounce-1;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-duration: 8s;
+            animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes bounce-1 {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes bounce-1 {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
 }
 /* Tablet */
 @media only screen and (min-width: 48em) {
@@ -472,8 +532,109 @@ main {
             transform: translateY(-2.5em);
     margin-top: 2em;
   }
+  .creationPics .left {
+    position: relative;
+  }
+  .creationPics .left:before {
+    content: '';
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: 0.15em solid var(--secondary);
+    opacity: .5;
+    top: -0.65em;
+    left: -0.65em;
+    z-index: -1;
+    -webkit-animation-name: bounce-1;
+            animation-name: bounce-1;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-duration: 8s;
+            animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .creationPics .middle {
+    position: relative;
+  }
+  .creationPics .middle:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 15em;
+    width: 16em;
+    background: transparent;
+    border: 0.15em solid var(--secondary);
+    top: -1.2em;
+    left: -0.65em;
+    opacity: .5;
+    z-index: -1;
+    -webkit-animation-name: bounce-1;
+            animation-name: bounce-1;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-duration: 8s;
+            animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .creationPics .right {
+    position: relative;
+  }
+  .creationPics .right:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 15em;
+    width: 15em;
+    background: transparent;
+    border: 0.15em solid var(--secondary);
+    opacity: .5;
+    bottom: -0.35em;
+    right: -0.65em;
+    z-index: -1;
+    -webkit-animation-name: bounce-1;
+            animation-name: bounce-1;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-duration: 8s;
+            animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes bounce-1 {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-5px);
+              transform: translateY(-5px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes bounce-1 {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-5px);
+              transform: translateY(-5px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
 }
-/* Large Desktop */
 /*-- -------------------------- -->
 <---       testimonials         -->
 <--- -------------------------- -*/
@@ -510,7 +671,7 @@ main {
     background: rgba(255, 255, 255, 0.6);
     border-radius: 0.25em;
   }
-  .testimonials .card .cardTop {
+  .testimonials .cardTop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
