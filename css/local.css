@@ -594,8 +594,8 @@ main {
     background: transparent;
     border: 0.15em solid var(--secondary);
     opacity: .5;
-    bottom: -0.35em;
-    right: -0.65em;
+    top: 0.35em;
+    left: 0.65em;
     z-index: -1;
     -webkit-animation-name: bounce-1;
             animation-name: bounce-1;
