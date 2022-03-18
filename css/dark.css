@@ -256,17 +256,21 @@
   body.dark-mode #form label {
     color: #fff;
   }
-  body.dark-mode #form ::-webkit-input-placeholder {
-    opacity: .3;
+  body.dark-mode #form #contact .input-group ::-webkit-input-placeholder {
+    opacity: 1;
+    color: #747272;
   }
-  body.dark-mode #form :-ms-input-placeholder {
-    opacity: .3;
+  body.dark-mode #form #contact .input-group :-ms-input-placeholder {
+    opacity: 1;
+    color: #747272;
   }
-  body.dark-mode #form ::-ms-input-placeholder {
-    opacity: .3;
+  body.dark-mode #form #contact .input-group ::-ms-input-placeholder {
+    opacity: 1;
+    color: #747272;
   }
-  body.dark-mode #form ::placeholder {
-    opacity: .3;
+  body.dark-mode #form #contact .input-group ::placeholder {
+    opacity: 1;
+    color: #747272;
   }
   body.dark-mode #form .contact-right {
     background: var(--tint);
