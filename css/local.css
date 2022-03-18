@@ -565,8 +565,8 @@ main {
     content: '';
     position: absolute;
     display: block;
-    height: 15em;
-    width: 16em;
+    height: 88%;
+    width: 106%;
     background: transparent;
     border: 0.15em solid var(--secondary);
     top: -1.2em;
@@ -589,13 +589,13 @@ main {
     content: '';
     position: absolute;
     display: block;
-    height: 15em;
-    width: 15em;
+    height: 100%;
+    width: 100%;
     background: transparent;
     border: 0.15em solid var(--secondary);
     opacity: .5;
     top: 0.35em;
-    left: 0.65em;
+    left: 0.35em;
     z-index: -1;
     -webkit-animation-name: bounce-1;
             animation-name: bounce-1;
