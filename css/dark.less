@@ -21,6 +21,14 @@
         /*-- -------------------------- -->
         <---           Home             -->
         <--- -------------------------- -*/
+
+        .creationPics{
+            .left, .middle, .right{
+                &::before{
+                    border-color: var(--primary);
+                }
+            }
+        }
     
         #hero, #about, .creations, #testimonials, .serviceBackground{
             position: relative;
@@ -258,6 +266,7 @@
                 }
             }
         }
+        
     
         /*-- -------------------------- -->
         <---           About            -->
@@ -364,13 +373,11 @@
         <---        Testimonials        -->
         <--- -------------------------- -*/
 
-        #testimonials {
-            .card {
-                background: rgba(0,0,0, .3);
-                z-index: 1;
-
-                h4.name{
-                    color: #fff
+        #reviews {
+            .name{
+                color: #fff;
+                &::before{
+                    border-color: var(--primary);
                 }
             }
             

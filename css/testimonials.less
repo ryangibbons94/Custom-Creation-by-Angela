@@ -92,11 +92,23 @@
     #reviews {
         padding-top: 35/20em;
         padding-bottom: 150/20em;
+        .testimonialPic{
+            width: 90%;
+            display: block;
+            max-width: 480/20em;
+            margin: 40/20em auto;
+            margin-top: 80/20em;
+        }
+        .card{
+            margin-top: -60/20em;
+            margin-bottom: 80/20em;
+            z-index: 10;
 
         h2, .yellow-span {
             display: block;
             text-align: center;
         }
+
 
         .stars {
             display: -webkit-box;
@@ -150,15 +162,16 @@
                 content: '';
                 position: absolute;
                 display: block;
-                height: 40/18em;
-                width: 40/18em;
+                height: 80/18em;
+                width: 80/18em;
                 border-radius: 50%;
-                background: var(--primary);
-                opacity: .2;
+                border: 2px solid var(--secondary);
+                opacity: .4;
                 z-index: -1;
             }
         }
     }
+}
 }
 
 /* Small Desktop */
@@ -166,6 +179,12 @@
 
     #reviews {
         padding: 0px 0 100/20em;
+
+        .card{
+            width: 60%;
+            margin: 0 auto;
+            margin-top: -60/20em;
+        }
 
         .stars {
             margin-top: 150/20em;
@@ -178,3 +197,7 @@
     }
 
 }
+
+// *{
+//     outline: 1px solid red;
+// }

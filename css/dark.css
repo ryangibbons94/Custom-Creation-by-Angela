@@ -24,6 +24,11 @@
     border-right: 0.2em solid var(--primary);
     color: var(--primary);
   }
+  body.dark-mode .creationPics .left::before,
+  body.dark-mode .creationPics .middle::before,
+  body.dark-mode .creationPics .right::before {
+    border-color: var(--primary);
+  }
   body.dark-mode #hero,
   body.dark-mode #about,
   body.dark-mode .creations,
@@ -291,12 +296,11 @@
   body.dark-mode #form #contact .button-solid::before {
     background: var(--tint);
   }
-  body.dark-mode #testimonials .card {
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 1;
+  body.dark-mode #reviews .name {
+    color: #fff;
   }
-  body.dark-mode #testimonials .card h4.name {
-    color: #ffffff;
+  body.dark-mode #reviews .name::before {
+    border-color: var(--primary);
   }
 }
 /* Desktop */
