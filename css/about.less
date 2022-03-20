@@ -6,7 +6,7 @@
 @media only screen and (min-width: 0em) {
 
     #int-hero {
-        min-height: 50vh;
+        min-height: 60vh;
         background: url("/images/about-mobile.jpg");
         background-size: cover;
         background-position: center;
@@ -41,7 +41,7 @@
                 content: '';
                 position: absolute;
                 display: block;
-                height: 200%;
+                height: 150%;
                 width: 50%;
                 background: transparent;
                 border: 10/64em solid var(--primary);
@@ -82,47 +82,54 @@
 }
 
 /*-- -------------------------- -->
-<---           About            -->
+<---        creations           -->
 <--- -------------------------- -*/
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
 
-    #about-content {
+    .creationSection {
+
+        padding-top: 120/20em;
+
         .container {
             padding: 0;
             width: 96%;
             margin: auto;
         }
         .image {
-            position: relative;
+            margin-top: 20/20em;
             width: 100%;
             max-width: 400/20em;
-            height: 400/20em;
             margin: auto;
             margin-bottom: 50/20em;
-
-            img {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            &:before {
+                content: '';
                 position: absolute;
-                top: 0;
-                left: 0;
+                display: block;
                 height: 100%;
                 width: 100%;
-                object-fit: cover;
+                background: var(--primary);
+                opacity: .5;
+                top: -50/36em;
+                right: -50/36em;
+                z-index: -1;
+            }
+
+            img{
+                width: 50%;
+                padding: 1.5%;
             }
         }
 
         .content {
-            .topper {
-                font-size: 14/20em;
-                line-height: 19/14;
-                color: var(--primary);
-                letter-spacing: .06em;
-                margin-bottom: 6/14em;
-                display: block;
-                text-transform: uppercase;
-                font-weight: bold;
-            }
+
+            margin-bottom: 60/20em;
 
             h2 {
                 font-size: 36/20em;
@@ -131,6 +138,7 @@
                 font-weight: 900;
                 margin-bottom: 24/36em;
                 position: relative;
+                text-align: center;
 
                 &:before {
                     content: '';
@@ -139,7 +147,7 @@
                     height: 150/36em;
                     width: 150/36em;
                     background: var(--primary);
-                    opacity: .05;
+                    opacity: .5;
                     top: -50/36em;
                     left: -50/36em;
                     z-index: -1;
@@ -152,17 +160,11 @@
                 align-items: center;
                 margin-bottom: 18/20em;
 
-                img {
-                    width: 30/20em;
-                    height: 30/20em;
-                    display: inline-block;
-                    margin-right: 15/20em;
-                }
-
                 .line {
-                    width: 80%;
+                    width: 100%;
                     height: 1px;
-                    background: var(--primary);
+                    background: var(--secondary);
+                    opacity: .5;
                 }
             }
 
@@ -172,14 +174,29 @@
                 color: #595959;
             }
         }
+
+    }
+    .reverse{
+        .image{
+            &::before{
+                left: -50/36em;
+            }
+        }
+        .content{
+            h2{
+                &::before{
+                    left: 80%;
+                }
+            }
+        }
     }
 }
 
 /* Tablet */
 @media only screen and (min-width: 48em) {
 
-    #about-content {
-        padding-top: 200/20em;
+    .creationSection {
+        padding-top: 100/20em;
         .container {
             display: flex;
             justify-content: space-between;
@@ -197,163 +214,22 @@
             margin-left: 50/20em;
         }
     }
-}
+    .reverse{
+        .container{
+        flex-direction: row-reverse;
+    }}
+    }
+
 
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
-    #about-content {
+    .creationSection {
         .image {
             max-width: 500/20em;
         }
     }
 }
 
-/*-- -------------------------- -->
-<---           Staff            -->
-<--- -------------------------- -*/
-
-/* Mobile */
-@media only screen and (min-width: 0em) {
-
-    #staff {
-        padding-top: 100/20em;
-        .container {
-            width: 90%;
-            margin: auto;
-        }
-        .topper {
-            font-size: 14/20em;
-            line-height: 19/14;
-            color: #0e817c;
-            letter-spacing: .06em;
-            margin-bottom: 6/14em;
-            display: block;
-            text-transform: uppercase;
-            font-weight: bold;
-            margin: auto;
-            text-align: center;
-        }
-
-        h2 {
-            font-size: 42/20em;
-            line-height: 42/42em;
-            font-weight: 900;
-            text-align: center;
-            display: block;
-            margin-bottom: 20/42em;
-            position: relative;
-
-            &:before {
-                content: '';
-                position: absolute;
-                height: 150/42em;
-                width: 150/42em;
-                background: var(--primary);
-                opacity: .05;
-                top: -50/42em;
-                left: 50%;
-                transform: translateX(-50%);
-                z-index: -1;
-            }
-        }
-
-        .main-p {
-            font-size: 18/20em;
-            color: #595959;
-            text-align: center;
-            width: 100%;
-            max-width: 700/20em;
-            margin: auto;
-            margin-bottom: 70/18em;
-        }
-
-        .member {
-            margin-bottom: 75/20em;
-            width: 100%;
-            max-width: 400/20em;
-            .image {
-                position: relative;
-                width: 100%;
-                max-width: 400/20em;
-                height: 400/20em;
-                margin: auto;
-                margin-bottom: 50/20em;
-    
-                img {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
-                }
-            }
-
-            .desc {
-                border-left: 5px solid var(--primary);
-                padding-left: 20px;
-            }
-
-            h3 {
-                font-size: 30/20em;
-                line-height: 1.5em;
-                margin-bottom: 0/30em;
-            }
-
-            .title {
-                font-size: 16/20em;
-                line-height: 27/16;
-                text-transform: uppercase;
-                letter-spacing: .06em;
-                color: #595959;
-                margin-bottom: 24/16em;
-                display: block;
-            }
-        }
-    }
-}
-
-/* Tablet */
-@media only screen and (min-width: 48em) {
-
-    #staff {
-        .container {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            width: 96%;
-            max-width: 1144/20em;
-            padding: 0;
-        }
-
-        .member {
-            margin: 0;
-            margin-bottom: 100/20em;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            max-width: none;
-
-            .image {
-                width: 40%;
-                margin: 0;
-                margin-right: 50/20em;
-            }
-
-            .content {
-                width: 60%;
-            }
-        }
-    }
-}
-
-/* Small Desktop */
-@media only screen and (min-width: 64em) {
-
-}
-
-/* Large Desktop */
-@media only screen and (min-width: 1300px) {
-
-}
+// *{
+//     outline: 1px solid red;
+// }

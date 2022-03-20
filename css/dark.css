@@ -234,21 +234,19 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-  body.dark-mode #about-content .content .topper {
-    color: var(--shade);
-  }
-  body.dark-mode #about-content .content h2 {
+  body.dark-mode .creationSection .content h2 {
     color: #fff;
   }
-  body.dark-mode #about-content .content h2:before {
-    background: var(--shade);
+  body.dark-mode .creationSection .content h2:before {
+    background: var(--primary);
     opacity: .1;
   }
-  body.dark-mode #about-content .content h2 span {
+  body.dark-mode .creationSection .content h2 span {
     color: var(--shade);
   }
-  body.dark-mode #about-content .content .decoration .line {
-    background: var(--shade);
+  body.dark-mode .creationSection .content .decoration .line {
+    background: var(--primary);
+    opacity: .5;
   }
   body.dark-mode #staff h2 {
     color: #fff;
