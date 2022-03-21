@@ -162,6 +162,13 @@
   .button-solid:hover:before {
     width: 100%;
   }
+  .button-second {
+    background: var(--secondary);
+    color: white;
+  }
+  .button-second::before {
+    background-color: var(--darkPrimary);
+  }
   button:hover {
     cursor: pointer;
     -webkit-transition: .2s ease;
