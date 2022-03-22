@@ -685,6 +685,9 @@ main {
             justify-content: flex-start;
     gap: 2em;
   }
+  .testimonials .cardTop .stars {
+    z-index: 100;
+  }
 }
 /* Tablet */
 @media only screen and (min-width: 48em) {
@@ -698,6 +701,9 @@ main {
   }
   .testimonials .card p {
     font-size: 1.25em;
+  }
+  .testimonials .card .star {
+    z-index: 100;
   }
   .testimonials img {
     height: 36px;
