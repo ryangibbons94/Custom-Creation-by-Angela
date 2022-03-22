@@ -515,7 +515,7 @@
     margin: 0 !important;
     position: absolute;
     left: 0px;
-    width: 12em;
+    width: 17em;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -702,7 +702,7 @@
   #footer .left-section .logo {
     display: block;
     margin: auto;
-    width: 15em;
+    width: 17.5em;
     height: auto;
     margin-bottom: 1.5em;
     text-align: center;
@@ -896,3 +896,7 @@
   }
 }
 /* Large Desktop */
+.filter {
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
