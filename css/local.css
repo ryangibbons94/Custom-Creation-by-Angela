@@ -367,7 +367,9 @@ main {
 @media only screen and (min-width: 64em) {
   .about .aboutContent {
     position: relative;
-    gap: 15em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .about .aboutContent .aboutText p {
     z-index: 1000;
@@ -387,8 +389,17 @@ main {
     opacity: .65;
     z-index: 0;
   }
+  .about .picOfMe {
+    width: 40%;
+    max-width: 22.5em;
+  }
 }
 /* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  .about .aboutContent {
+    gap: 15em;
+  }
+}
 /*-- -------------------------- -->
 <---      Landing Creations     -->
 <--- -------------------------- -*/

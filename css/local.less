@@ -379,7 +379,8 @@ main {
     .about{
         .aboutContent{
             position: relative;
-            gap: 300/20em;
+            // gap: 300/20em;
+            justify-content: space-between;
             .aboutText p{
                 z-index: 1000;
             }
@@ -400,12 +401,20 @@ main {
             z-index: 0;
         }
     }
+    .picOfMe{
+        width: 40%;
+        max-width: 450/20em;
+    }
 }
 }
 
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
-
+    .about{
+        .aboutContent{
+            gap: 300/20em;
+        }
+    }
 }
 
 /*-- -------------------------- -->
