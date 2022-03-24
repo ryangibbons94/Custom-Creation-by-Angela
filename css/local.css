@@ -134,7 +134,7 @@ main {
     background: #fff;
     padding: 2.1em;
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -206,12 +206,13 @@ main {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 90%;
+    width: 88%;
     margin-left: auto;
     margin-right: auto;
   }
   #services .service:nth-of-type(1) {
     border-right: 0.05em solid rgba(255, 255, 255, 0.05);
+    margin-top: 0;
   }
   #services .service:nth-of-type(1),
   #services .service:nth-of-type(3) {
@@ -238,34 +239,38 @@ main {
 /* Tablet */
 @media only screen and (min-width: 791px) {
   #services {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     width: 96%;
     max-width: 57.2em;
     margin: auto;
     margin-top: -6.5em;
-    position: relative;
-    z-index: 100;
-    padding: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: min(1.4vw, 1em);
   }
   #services .service {
     margin: 0;
-    width: 18.6em;
     height: 100%;
     border-radius: 0;
     border-top: 0.35em solid #fff2b3;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding-bottom: 2em;
   }
   #services .service:nth-of-type(2) {
     -webkit-box-ordinal-group: initial;
         -ms-flex-order: initial;
             order: initial;
-    width: 18.6em;
-    height: 100%;
     border: none;
     -webkit-box-shadow: none;
             box-shadow: none;
