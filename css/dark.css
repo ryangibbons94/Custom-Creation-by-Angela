@@ -106,6 +106,20 @@
   body.dark-mode .serviceBackground .button-solid:before {
     background: var(--tint);
   }
+  body.dark-mode #hero .button-second,
+  body.dark-mode #about .button-second,
+  body.dark-mode .creations .button-second,
+  body.dark-mode #testimonials .button-second,
+  body.dark-mode .serviceBackground .button-second {
+    background: var(--tint);
+  }
+  body.dark-mode #hero .button-second::before,
+  body.dark-mode #about .button-second::before,
+  body.dark-mode .creations .button-second::before,
+  body.dark-mode #testimonials .button-second::before,
+  body.dark-mode .serviceBackground .button-second::before {
+    background: var(--darkPrimary);
+  }
   body.dark-mode #services .service {
     background: var(--darkPrimary);
   }

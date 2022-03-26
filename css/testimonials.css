@@ -152,8 +152,8 @@
     content: '';
     position: absolute;
     display: block;
-    height: 4.44444444em;
-    width: 4.44444444em;
+    height: 5.55555556em;
+    width: 5.55555556em;
     border-radius: 50%;
     border: 2px solid var(--secondary);
     opacity: .4;
