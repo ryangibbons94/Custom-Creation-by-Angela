@@ -22,6 +22,12 @@
   body.dark-mode .button-solid {
     color: #fff;
   }
+  body.dark-mode .creationSection .button-solid {
+    background: var(--darkPrimary);
+  }
+  body.dark-mode .creationSection .button-solid::before {
+    background: var(--tint);
+  }
   body.dark-mode .nav-logo {
     display: none;
   }
