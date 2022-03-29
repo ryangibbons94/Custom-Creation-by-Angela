@@ -164,6 +164,7 @@ main {
   }
   #services .service .circle img {
     width: 4.25em;
+    height: 4.25em;
   }
   #services .service:nth-of-type(2) {
     border-top: 0.35em solid #fff2b3;
