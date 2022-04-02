@@ -333,7 +333,6 @@ main {
   .about .picOfMe {
     border-radius: 50%;
     width: 80%;
-    aspect-ratio: 1;
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
@@ -400,11 +399,6 @@ main {
   }
 }
 /* Large Desktop */
-@media only screen and (min-width: 1300px) {
-  .about .aboutContent {
-    gap: 15em;
-  }
-}
 /*-- -------------------------- -->
 <---      Landing Creations     -->
 <--- -------------------------- -*/
