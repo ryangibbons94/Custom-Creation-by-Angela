@@ -366,6 +366,9 @@ main {
 }
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
+  .about {
+    padding-bottom: 10em;
+  }
   .about .aboutContent {
     position: relative;
     -webkit-box-pack: justify;
@@ -380,6 +383,7 @@ main {
     padding: 2em;
     text-align: left;
     z-index: 100;
+    line-height: 1.5;
   }
   .about .aboutContent .border {
     display: block;
