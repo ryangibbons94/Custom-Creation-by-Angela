@@ -52,13 +52,13 @@
   body.dark-mode .creations:before,
   body.dark-mode #testimonials:before,
   body.dark-mode .serviceBackground:before {
-    content: "";
+    content: '';
     position: absolute;
     display: block;
     height: 100%;
     width: 100%;
     background: #000;
-    opacity: 0.7;
+    opacity: .7;
     top: 0;
     left: 0;
     z-index: 0;
@@ -153,7 +153,7 @@
   }
   body.dark-mode #about1 .left-section:before {
     background: var(--shade);
-    opacity: 0.1;
+    opacity: .1;
   }
   body.dark-mode #about1 .right-section .topper {
     color: var(--shade);
@@ -163,7 +163,7 @@
   }
   body.dark-mode #about1 .right-section h2:before {
     background: var(--shade);
-    opacity: 0.1;
+    opacity: .1;
   }
   body.dark-mode #about1 .right-section h2 span {
     color: var(--shade);
@@ -175,7 +175,6 @@
     background: var(--darkPrimary);
   }
   body.dark-mode #how-we-know {
-    -webkit-box-shadow: none;
     box-shadow: none;
   }
   body.dark-mode #how-we-know .left-section {
@@ -183,7 +182,7 @@
   }
   body.dark-mode #how-we-know .left-section ul li {
     color: #fff;
-    opacity: 0.9;
+    opacity: .9;
   }
   body.dark-mode #how-we-know .right-section {
     background: var(--darkPrimary);
@@ -260,28 +259,24 @@
   }
   body.dark-mode .creationSection .content h2:before {
     background: var(--primary);
-    opacity: 0.1;
+    opacity: .1;
   }
   body.dark-mode .creationSection .content h2 span {
     color: var(--shade);
   }
   body.dark-mode .creationSection .content .decoration .line {
     background: var(--primary);
-    opacity: 0.5;
+    opacity: .5;
   }
   body.dark-mode #staff h2 {
     color: #fff;
   }
   body.dark-mode #staff .member .title {
     color: #fff;
-    opacity: 0.7;
+    opacity: .7;
   }
   body.dark-mode .testimonials .stars {
     z-index: 100;
-  }
-  body.dark-mode .testimonials .name {
-    z-index: 100;
-    color: white;
   }
   body.dark-mode #form .topper {
     color: var(--primary);
@@ -291,18 +286,6 @@
   }
   body.dark-mode #form label {
     color: #fff;
-  }
-  body.dark-mode #form #contact .input-group ::-webkit-input-placeholder {
-    opacity: 1;
-    color: #747272;
-  }
-  body.dark-mode #form #contact .input-group :-ms-input-placeholder {
-    opacity: 1;
-    color: #747272;
-  }
-  body.dark-mode #form #contact .input-group ::-ms-input-placeholder {
-    opacity: 1;
-    color: #747272;
   }
   body.dark-mode #form #contact .input-group ::placeholder {
     opacity: 1;
@@ -343,8 +326,6 @@
 /* Desktop */
 @media screen and (min-width: 1024px) {
   body.dark-mode .nav-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   body.dark-mode #how-we-know {
